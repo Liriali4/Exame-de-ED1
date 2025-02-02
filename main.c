@@ -184,13 +184,11 @@ int main() {
                             printf("\n\n			Embalagens PB\n\n");
                             imprimirFilaDeEmbalagens(filaDeEmbalagensPB);
                             
-                            
 						    printf("\n\n			Caixas do tipo PA \n\n");
 							imprimirFilaDeCaixas(filaDeCaixasPA);
 							
 							printf("\n\n			Caixas do tipo PB \n\n");
 							imprimirFilaDeCaixas(filaDeCaixasPB);
-
 
                         break;
                         case 9:// gerar rellatório
