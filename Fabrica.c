@@ -411,11 +411,11 @@ void empilharCaixas(FilaDeEmbalagens *filaPA, FilaDeEmbalagens *filaPB,
 		MaquinaDeEmpilhamento->qtdd_por_dia++;
 		
         // Se a caixa estiver cheia, adiciona na fila de caixas
-        if (countPB == 4) {
+        if (countPB == 3) {
             printf("Caixa de PB cheia, inserindo na fila...\n\n");
             inserirCaixaNaFila(filaDeCaixasPB, caixaAtualPB);
             caixaAtualPB = criarCaixa();
-            countPA = 0;
+            countPB = 0;
         }
 		printf("\n");
         // Remover a embalagem da fila original
