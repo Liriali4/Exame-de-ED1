@@ -3,6 +3,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <stdbool.h>
+#include <time.h>
+
 
 //----------------------------   Função para iniciar uma fila  ----------------------------------------
 Fila *iniciarFila() {
@@ -148,6 +150,7 @@ void encherPacotes(Fila *fila, Maquina *maquinaDeEnchimento) {
         printf("Nenhum pacote na fila para encher.\n");
         return;
     }
+
 	maquinaDeEnchimento->fila_do_produto = fila;
 		
     int qtdEnchidos = 0;
@@ -233,7 +236,6 @@ void embalarPacotes(
 	FilaDeEmbalagens *filaDeEmbalagensPB,
 	Fila *filaDescartados
 ){
-   
    //Peca o primeiro da fila
     Lista *atual = filaInicial->inicio;
     Lista *anterior = NULL;
@@ -244,7 +246,8 @@ void embalarPacotes(
 	int countPB = 0;
 	
 	while (atual != NULL) {
-	    validarPacote(&atual->valor);
+		
+		validarPacote(&atual->valor);
 	
 	    if (atual->valor.valido) {
 	        if (atual->valor.peso == 200 && (modo == 1 || modo == 3)) {
@@ -285,6 +288,7 @@ void embalarPacotes(
 
     filaInicial->inicio = NULL;
     filaInicial->fim = NULL;
+    
     printf("\n\n	Pacotes embalados com sucesso!\n\n");
     
 }

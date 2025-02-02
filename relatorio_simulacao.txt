@@ -1,18 +1,18 @@
 Lucro = Venda - (Custo e Prejuízo)
 
 Produto	Custo de Produção (KZ)	Preço de Venda (KZ)	Lucro
-PA	   	   250	   	   1100	   	   	    850
-PB	   	   220	   	   1700	   	   	    1480
+PA	   	   250	   	   1100	   	   	 850
+PB	   	   220	   	   1700	   	   	 1480
 
 -----------------------------1ª Fase---------------------------------
-Nº de pacotes inseridos: 73
-Nº de pacotes enchidos: 73
+Nº de pacotes inseridos: 72
+Nº de pacotes enchidos: 72
 
 Tempo de processamento: 0 segundos
 
 -----------------------------2ª Fase---------------------------------
-Nº de pacotes validados: 2 (PA: 0, PB: 4222118)
-Nº de pacotes descartados: 1
+Nº de pacotes validados: 72 (PA: 48, PB: 24)
+Nº de pacotes descartados: 0
 Nº de embalagens PA: 8
 Nº de embalagens PB: 6
 

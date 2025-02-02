@@ -60,7 +60,8 @@ int menuAposEmpilhamento() {
     int x;
     printf("\n\n");
     printf("7- Imprimir caixas empilhadas\n");
-    printf("8- Gerar relatório\n");
+    printf("8- Imprimir resultados finais\n");
+    printf("9- Gerar relatório\n");
     printf("0- Encerrar o programa\n");
     printf("R: ");
     scanf("%d", &x);
@@ -171,7 +172,28 @@ int main() {
 							imprimirFilaDeCaixas(filaDeCaixasPB);
 
                             break;
-						case 8:// gerar rellatório
+						case 8:// Imprimi estados
+						
+						    printf("\n\n			Fila Inicial \n\n");
+						    imprimirFila(filaInicial);
+						    printf("\n\n			Fila de Descartados \n\n");
+						    imprimirFila(filaDescartados);
+						    
+							printf("\n\n			Embalagens PA \n\n");
+                            imprimirFilaDeEmbalagens(filaDeEmbalagensPA);
+                            printf("\n\n			Embalagens PB\n\n");
+                            imprimirFilaDeEmbalagens(filaDeEmbalagensPB);
+                            
+                            
+						    printf("\n\n			Caixas do tipo PA \n\n");
+							imprimirFilaDeCaixas(filaDeCaixasPA);
+							
+							printf("\n\n			Caixas do tipo PB \n\n");
+							imprimirFilaDeCaixas(filaDeCaixasPB);
+
+
+                        break;
+                        case 9:// gerar rellatório
 						
 							gerarRelatorio(
 							    filaInicial,             
