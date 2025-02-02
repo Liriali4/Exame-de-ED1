@@ -397,7 +397,7 @@ void empilharCaixas(FilaDeEmbalagens *filaPA, FilaDeEmbalagens *filaPB,
         }
 		printf("\n");
         // Remover a embalagem da fila original
-        //free(tempPA);
+       // free(tempPA);
     }
 
     // Empilhando PB (3 embalagens por caixa)
