@@ -100,7 +100,18 @@ void inserirCaixaNaFila(FilaDeCaixas *fila, Pilha *caixa);//leva para a fila de 
 
 void imprimirFilaDeCaixas(FilaDeCaixas *fila);
 
-//void imprimirEstado(Fila *filaInicial, Fila *filaEnchimento, Fila *filaEmbalamento, Pilha *pilhaPA, Pilha *pilhaPB);
+void gerarRelatorio(
+Fila *filaInicial,
+Maquina *maquinaDeEnchimento,
+FilaDeEmbalagens *filaPA,
+FilaDeEmbalagens *filaPB,
+Maquina *maquinaDeEmbalar,
+Fila *filaDescartados,
+FilaDeCaixas *filaDeCaixasPA,
+FilaDeCaixas *filaDeCaixasPB,
+Maquina *maquinaEmpilhadora
+
+);
 
 
 #endif // TAD_FABRICA_H

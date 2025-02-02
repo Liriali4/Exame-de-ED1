@@ -2,6 +2,7 @@
 #include <stdlib.h>
 #include <locale.h>
 #include "./Fabrica.c"
+#include "./relatorio.c"
 
 int menuModoDeInsercao() {
     int x;
@@ -59,6 +60,7 @@ int menuAposEmpilhamento() {
     int x;
     printf("\n\n");
     printf("7- Imprimir caixas empilhadas\n");
+    printf("8- Gerar relatório\n");
     printf("0- Encerrar o programa\n");
     printf("R: ");
     scanf("%d", &x);
@@ -169,7 +171,21 @@ int main() {
 							imprimirFilaDeCaixas(filaDeCaixasPB);
 
                             break;
+						case 8:// gerar rellatório
+						
+							gerarRelatorio(
+							    filaInicial,
+							    MaquinaDeEnchimento,
+							    filaDeEmbalagensPA,
+							    filaDeEmbalagensPB,
+								MaquinaDeEmbalamento,
+							    filaDescartados,
+							    filaDeCaixasPA,
+							    filaDeCaixasPB,
+							    MaquinaDeEmpilhamento
+							);
 
+                        break;
                         case 0:
                             printf("Encerrando o programa...\n");
                             exit(0);
