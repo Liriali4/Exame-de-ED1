@@ -7,7 +7,7 @@
 
 typedef struct pacote {
     float peso;		// 200ml(PA) ou 1L(PB)
-    char estado[8]; 	// vazio ou cheio ou embalado
+    char estado[8]; 	// vazio ou cheio
     bool valido; 	//pacote válido ou inválido
 } Pacote;
 
@@ -101,16 +101,15 @@ void inserirCaixaNaFila(FilaDeCaixas *fila, Pilha *caixa);//leva para a fila de 
 void imprimirFilaDeCaixas(FilaDeCaixas *fila);
 
 void gerarRelatorio(
-Fila *filaInicial,
-Maquina *maquinaDeEnchimento,
-FilaDeEmbalagens *filaPA,
-FilaDeEmbalagens *filaPB,
-Maquina *maquinaDeEmbalar,
-Fila *filaDescartados,
-FilaDeCaixas *filaDeCaixasPA,
-FilaDeCaixas *filaDeCaixasPB,
-Maquina *maquinaEmpilhadora
-
+    Fila *filaInicial,
+    Maquina *maquinaDeEnchimento,
+    Maquina *maquinaDeEmbalar,
+    Fila *filaDescartados,
+    FilaDeEmbalagens *filaPA,
+    FilaDeEmbalagens *filaPB,
+    FilaDeCaixas *filaDeCaixasPA,
+    FilaDeCaixas *filaDeCaixasPB,
+    Maquina *maquinaEmpilhadora
 );
 
 

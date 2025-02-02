@@ -174,15 +174,15 @@ int main() {
 						case 8:// gerar rellatório
 						
 							gerarRelatorio(
-							    filaInicial,
-							    MaquinaDeEnchimento,
-							    filaDeEmbalagensPA,
-							    filaDeEmbalagensPB,
-								MaquinaDeEmbalamento,
-							    filaDescartados,
-							    filaDeCaixasPA,
-							    filaDeCaixasPB,
-							    MaquinaDeEmpilhamento
+							    filaInicial,             
+							    MaquinaDeEnchimento,     
+							    MaquinaDeEmbalamento,    
+							    filaDescartados,        
+							    filaDeEmbalagensPA,      
+							    filaDeEmbalagensPB,      
+							    filaDeCaixasPA,          
+							    filaDeCaixasPB,         
+							    MaquinaDeEmpilhamento   
 							);
 
                         break;
