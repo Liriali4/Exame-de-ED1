@@ -115,13 +115,6 @@ void inserirPacoteNaFilaInicialAutomaticamente(Fila *fila, const char *nomeArqui
     printf("\nPacotes inseridos automaticamente com sucesso.\n");
 }
 
-/*
-if (contador == 0) {
-        printf("Nenhum pacote foi carregado do arquivo.\n\n");
-    } else {
-        printf("Pacotes inseridos automaticamente: %d\n\n", contador);
-    }
-*/
 
 //----------------------------   Inserção  de embalagens na fila de embalagens  ----------------------------  
 void inserirEmbalagemNaFilaDeEmbalagens(FilaDeEmbalagens *fila, Lista *embalagem) {
